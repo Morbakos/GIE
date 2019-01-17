@@ -8,9 +8,10 @@ Objectif du projet
   
 Participants au projet
 ======================
-  * Chef de projet - développeur backend: Gavin "Morbakos" Sertix
+  * Chef de projet - développeur backend: Morbakos
   * Développeur backend: Jack Smith
   * Développeur front: Stians
+  * Design/Graphisme/UI:  Pippermint
   
   
 Vous souhaitez contribuer ?
