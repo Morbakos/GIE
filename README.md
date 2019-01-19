@@ -12,7 +12,15 @@ Participants au projet
   * Développeur backend: Jack Smith
   * Développeur front: Stians
   * Design/Graphisme/UI:  Pippermint
-  
+
+Nommenclature de nommage des branches
+=====================================
+	Les branches doivent avoir le nom suivant:
+	*	Pour les branches du frontend:
+		feature-frontend-nomFeature
+	*	Pour les branches du backend:
+		feature-backend-nomFeature
+	Les 'nomFeature' sont à remplacer par le nom exacte, par exemple 'formulaireConnexion'  
   
 Vous souhaitez contribuer ?
 ============================
