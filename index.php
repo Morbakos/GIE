@@ -1,3 +1,5 @@
+<?php include 'psw.inc.php'; ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,11 +7,9 @@
 </head>
 <body>
 
-	<form action="psw.php" method="post">
-		<input type="text" name="name">
-		<input type="password" name="pass">
-		<input type="submit">
-	</form>
+	<?php echo(crypt_password("test")) ?>
 
 </body>
 </html>
+
+
