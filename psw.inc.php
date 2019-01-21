@@ -1,5 +1,4 @@
 <?php
-	include 'base.inc.php';
 
 	function crypt_password($pass){
 		$password = "Grou".$pass."IntEuro";

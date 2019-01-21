@@ -1,12 +1,13 @@
 <?php
 	class Base{
-		private $bdd;
+		//Variables
+		private $bd;
 		private static $instance = null;
 
 		private function __construct() {
 			try
 	        {
-	        	$hote = 'mysql:host=localhost;dbname=base_produit;charset=utf8';
+	        	$hote = 'mysql:host=localhost;dbname=gie;charset=utf8';
 				$user = 'root';
 				$pass = '';
 	            $this->bd = new PDO($hote, $user , $pass);
@@ -27,19 +28,23 @@
 		}
 
 		public function insertUser($user,$pass){
-			$sql = "INSERT INTO users VALUES(':user',':pass')";
-			$req = $this->$bdd->prepare($sql);
-			$req->bindValue(":user", $user);
-			$req->bindValue(":pass", $pass);
-			$req->execute();
+			try {
+				$sql = "INSERT INTO users(name,password) VALUES(:user,:pass)";
+				$req = $this->bd->prepare($sql);
+				$req->bindValue(":user", $user);
+				$req->bindValue(":pass", $pass);
+				$req->execute();
+			} catch (PDOException $e){
+				die('<p> Erreur : '. $e->getMessage().'</p>');
+			}
 		}
 
 		public function getPassword($user){
-			$sql = "SELECT password FROM users WHERE nom=:name";
-			$req = $this->$bdd->prepare($sql);
-			$req->bindValue(":name", $user);
+			$sql = "SELECT password FROM users WHERE name=:name";
+			$req = $this->bd->prepare($sql);
+			$req->bindValue(":name"	, $user);
 			$req->execute();
-			$res = $req->fetch(FETCH_ASSOC);
+			$res = $req->fetch(PDO::FETCH_ASSOC);
 			return $res;
 		}
 	}
