@@ -39,7 +39,7 @@ Les responsables de la mise à jour du projet ont la responsabilité de clarifie
 et on s'attend à ce qu'ils prennent des mesures correctives appropriées et équitables dans les cas suivants
 en cas de comportement inacceptable.
 
-Les responsables de projet (marqués comme "Administrateur/trice" et/ou "Modérateur/trice" sur le [fichier des contributions](CONTRIBUTING.md)) ont le droit et la responsabilité de supprimer, d'éditer ou de modifier les données du projet.
+Les responsables de projet (identifiés comme "Administrateur/trice" et/ou "Modérateur/trice" sur le [fichier des contributions](CONTRIBUTING.md)) ont le droit et la responsabilité de supprimer, d'éditer ou de modifier les données du projet.
 rejeter les commentaires, les engagements, le code, les éditions wiki, les problèmes et autres contributions
 qui ne sont pas conformes au présent Code de conduite, ou d'interdire temporairement ou définitivement
 en permanence tout contributeur pour d'autres comportements qu'ils jugent inappropriés,
