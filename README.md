@@ -28,3 +28,8 @@ Vous souhaitez contribuer ?
     * Un problème
     * Une idée
     * Une proposition
+
+Ressources utiles
+=================
+[Code de conduite](CODE_OF_CONDUCT.md) <br/>
+[Contributeurs](CONTRIBUTING.md)
