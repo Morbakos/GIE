@@ -1,10 +1,13 @@
 # Les personnes responsables du projet sont : 
 
-* Administrateurs/administratrices :
+* Administrateurs/Administratrices :
   * [Morbakos](https://github.com/Morbakos)
   * [Jack Smith](https://github.com/Sky-moon)
   * [Stians]()
   * Pippermint (pas inscrite sur GitHub), pour ses idées, propositions et soutien à @Stians.
+
+* Modérateur/Modératrice:
+  * Tous les membres du Groupe d'Iintervention Européen non cités ci-dessus
 
 # Les principaux contributeurs sont : 
 * [Jack Smith](https://github.com/Sky-moon), sur la partie "backend".
