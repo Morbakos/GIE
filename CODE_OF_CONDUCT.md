@@ -57,8 +57,8 @@ définis et clarifiés par les responsables du projet.
 ## Application de la loi
 
 Les cas de comportement abusif, de harcèlement ou d'autres comportements inacceptables peuvent être
-en communiquant avec l'équipe de projet à l'adresse team.gie.global@gmail.com. Tous
-feront l'objet d'un examen et d'une enquête et donneront lieu à une réponse qui
+en communiquant avec l'équipe de projet à l'adresse team.gie.global@gmail.com, ou via [notre Discord](https://discord.gg/bEA3UKV) en contactant un membre taggué en tant que "@Staff". Tous signalement
+fera l'objet d'un examen et d'une enquête et donneront lieu à une réponse qui
 est jugée nécessaire et appropriée dans les circonstances. L'équipe de projet est
 l'obligation de respecter la confidentialité à l'égard du déclarant d'un incident.
 De plus amples détails sur les politiques d'application spécifiques peuvent être affichés séparément.
@@ -66,15 +66,3 @@ De plus amples détails sur les politiques d'application spécifiques peuvent ê
 Les responsables de projet qui ne respectent pas ou n'appliquent pas le Code de conduite en bonne et due forme.
 la foi peut faire face à des répercussions temporaires ou permanentes déterminées par d'autres membres de la
 les membres de la direction du projet.
-
-## Attribution
-
-Le présent Code de conduite est adapté de la version 1.4 du[Pacte du contributeur][page d'accueil],
-disponible à l'adresse https://www.contributor-covenant.org/version/1/4/code-of-conduct.html
-
-[page d'accueil] : https://www.contributor-covenant.org
-
-Pour des réponses aux questions les plus fréquentes concernant ce code de conduite, voir
-https://www.contributor-covenant.org/faq
-
-Traduit avec www.DeepL.com/Translator
