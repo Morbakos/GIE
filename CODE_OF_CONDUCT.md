@@ -4,10 +4,7 @@
 
 Dans le but de favoriser un environnement ouvert et accueillant, nous, en tant que
 les contributeurs et les responsables de la maintenance s'engagent à participer à notre projet et à notre projet
-notre communauté une expérience sans harcèlement pour tout le monde, peu importe l'âge, l'âge, le corps, l'âge, l'âge, etc.
-la taille, le handicap, l'ethnicité, les caractéristiques sexuelles, l'identité et l'expression sexuelles,
-niveau d'expérience, éducation, statut socio-économique, nationalité, niveau d'instruction, situation personnelle
-l'apparence, la race, la religion ou l'identité et l'orientation sexuelles.
+notre communauté une expérience sans harcèlement pour tout le monde, peu importe l'âge, la taille, le handicap, l'origine ethnique, les caractéristiques sexuelles, l'identité et l'expression sexuelles, le niveau d'expérience, l'éducation, le statut socio-économique, la nationalité, l'apparence personnelle, la race, la religion, l'identité et l'orientation sexuelles.
 
 ## Nos normes
 
@@ -39,19 +36,14 @@ Les responsables de la mise à jour du projet ont la responsabilité de clarifie
 et on s'attend à ce qu'ils prennent des mesures correctives appropriées et équitables dans les cas suivants
 en cas de comportement inacceptable.
 
-Les responsables de projet (identifiés comme "Administrateur/trice" et/ou "Modérateur/trice" sur le [fichier des contributions](CONTRIBUTING.md)) ont le droit et la responsabilité de supprimer, d'éditer ou de modifier les données du projet.
+Les responsables de projet (identifiés comme "Administrateur/trice" et/ou "Modérateur/trice" sur le [fichier des contributions](CONTRIBUTING.md)) ont le droit et la responsabilité de supprimer, d'éditer ou de modifier les données du projet,
 rejeter les commentaires, les engagements, le code, les éditions wiki, les problèmes et autres contributions
 qui ne sont pas conformes au présent Code de conduite, ou d'interdire temporairement ou définitivement
-en permanence tout contributeur pour d'autres comportements qu'ils jugent inappropriés,
-menaçant, offensant ou nuisible.
+tout contributeur pour d'autres comportements qu'ils jugent inappropriés, menaçant, offensant ou nuisible.
 
 ## Portée
 
-Ce Code de Conduite s'applique aussi bien à l'intérieur des espaces du projet que dans les espaces publics.
-lorsqu'une personne représente le projet ou sa collectivité. Exemples de
-représentant un projet ou une collectivité, y compris l'utilisation d'un courriel officiel du projet
-l'adresse, l'affichage par l'intermédiaire d'un compte officiel de médias sociaux, ou le fait d'agir à titre d'employé de la
-à un événement en ligne ou hors ligne. La représentation d'un projet peut être
+Ce Code de Conduite s'applique aussi bien à l'intérieur des espaces du projet que dans les espaces publics, lorsqu'une personne représente le projet ou sa collectivité. Exemples de représentant un projet ou une collectivité, y compris l'utilisation d'un courriel officiel du projet l'adresse, l'affichage par l'intermédiaire d'un compte officiel de médias sociaux, ou le fait d'agir à titre d'employé de la à un événement en ligne ou hors ligne. La représentation d'un projet peut être
 définis et clarifiés par les responsables du projet.
 
 ## Application de la loi
