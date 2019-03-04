@@ -1,7 +1,7 @@
 <?php
 
 	function crypt_password($pass){
-		$password = "Grou".$pass."IntEuro";
+		$password = "lp1uigz75d".$pass."kpbm2dhofe";
 		$passw = hash("sha1", $password);
 		return $passw;
 	}

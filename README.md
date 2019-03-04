@@ -18,7 +18,7 @@ Première étape: création base de données
   Utilisateur |Photo de profile            |File (à découper) | 
   Utilisateur |Status membre               |Booléen           |
   Utilisateur |Status membre composante(s) |Booléen           |
-  Utilisateur |Status admin                |Int               |
+  Utilisateur |Status admin                |Booléen           |
    | | |
   Forum       |Sujet topic                 |String
   Forum       |Contenu topic               |String ou file
