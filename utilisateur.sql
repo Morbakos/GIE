@@ -8,4 +8,4 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
   `status_membre_composante(s)` tinyint(1) NOT NULL,
   `Status_admin` tinyint(1) NOT NULL,
   PRIMARY KEY (`Username`,`Email`), 
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
