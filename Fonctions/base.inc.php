@@ -21,6 +21,10 @@
 
 		}
 
+		/* ======================== *
+		* 		  	Getter 	   		*
+		*  ======================== */
+
 		//==== On instancie la classe
 		public static function getBase() {
 			if (is_null(self::$instance)) self::$instance = new Base();
@@ -64,6 +68,65 @@
 		        			user_pseudo = :user";
 				$req = $this->bd->prepare($sql);
 				$req->bindValue(":user"	, $user);
+				$req->execute();
+				$res = $req->fetch(PDO::FETCH_ASSOC);
+
+				if($res != "")
+					return $res;
+				else
+					return false;
+
+			} catch (PDOException $e){
+				die('<p> Erreur : '. $e->getMessage().'</p>');
+			}
+		}
+
+
+		/* ======================== *
+		* 		  	Setter 	   		*
+		*  ======================== */
+
+		//==== Méthode permettant de créer un user
+		public function setPersonne($data){
+			
+			try {
+				$sql = "INSERT INTO 
+							forum_user (`user_pseudo`, `user_mdp`, `user_email`)
+		        		VALUES (
+		        			NULL,
+		        			:pseudo,
+		        			:password,
+		        			:mail )";
+				$req = $this->bd->prepare($sql);
+				$req->bindValue(":pseudo" , $data['user']);
+				$req->bindValue(":password"	, $data['password']);
+				$req->bindValue(":mail"	, $data['mail']);
+				$req->execute();
+				$res = $req->fetch(PDO::FETCH_ASSOC);
+
+				if($res != "")
+					return $res;
+				else
+					return false;
+
+			} catch (PDOException $e){
+				die('<p> Erreur : '. $e->getMessage().'</p>');
+			}
+		}
+
+		public function set_cle_validation($id, $cle){
+			try {
+				$sql = "INSERT INTO 
+							forum_validation (`user_pseudo`, `user_mdp`, `user_email`)
+		        		VALUES (
+		        			NULL,
+		        			:pseudo,
+		        			:password,
+		        			:mail )";
+				$req = $this->bd->prepare($sql);
+				$req->bindValue(":pseudo" , $data['user']);
+				$req->bindValue(":password"	, $data['password']);
+				$req->bindValue(":mail"	, $data['mail']);
 				$req->execute();
 				$res = $req->fetch(PDO::FETCH_ASSOC);
 
