@@ -43,12 +43,12 @@ DROP TABLE IF EXISTS `forum_user`;
 CREATE TABLE IF NOT EXISTS `forum_user` (
   `id_user` int(11) NOT NULL AUTO_INCREMENT,
   `user_pseudo` varchar(30)  NOT NULL,
-  `user_mdp` varchar(32)  NOT NULL,
+  `user_mdp` varchar(64)  NOT NULL,
   `user_email` varchar(250)  NOT NULL,
-  `user_avatar` varchar(100)  NOT NULL,
-  `user_valide` int(11) NOT NULL,
-  `user_rang` tinyint (4) DEFAULT 1,
-  `user_post` int(11) NOT NULL,
+  `user_avatar` varchar(100)  NOT NULL DEFAULT '/users/avatars/default.jpg',
+  `user_valide` tinyint(1) NOT NULL DEFAULT 0,
+  `user_rang` tinyint(4) DEFAULT 1,
+  `user_post` int(11) NOT NULL DEFAULT 0,
   PRIMARY KEY  (`id_user`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
  
