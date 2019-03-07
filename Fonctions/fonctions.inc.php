@@ -1,5 +1,6 @@
 <?php
 
+
 	//==== Fonction qui permet de crypter un mot de passe
 	function crypt_password($pass){
 		$password = "lp1uigz75d".$pass."kpbm2dhofe";
@@ -27,11 +28,61 @@
 	function erreur($err=''){
 	   $mess=($err!='')? $err:'Une erreur inconnue s\'est produite';
 	   exit('<p>'.$mess.'</p>
-	   <p>Cliquez <a href="./index.php">ici</a> pour revenir à la page d\'accueil</p></div></body></html>');
+	   <p>Cliquez <a href="/index.php">ici</a> pour revenir à la page d\'accueil</p></div></body></html>');
 	}
+
+	//==== Fonction qui permet de vérifier la clé d'activation
+	function check_cle_activation($id, $cle){
+	   $bd = Base::get_base();
+
+	   //==== On récupère le datetime actuel
+	   $date = new DateTime();
+	   $date = date_format($date, 'Y-m-d H:i:s');
+
+	   //==== On récupère la limite de validation de la clé
+	   $data = $bd->get_cle_validation($id);
+
+	   //==== On vérifie que le compte n'est pas déjà activé
+	   if($data['user_valide'] == "1") {
+	   		return erreur(ERR_ALREADY_VALIDE);
+	   } else {
+
+	   		//==== Si la date actuelle est inférieure à la limite de validité de la clé
+	   		if($date < $data['validation_until']) {
+
+	   			//==== On vérifie que les clés correspondes
+	   			if($cle == $data['validation_cle']){
+	   				return true;
+	   			} else {
+	   				return erreur(ERR_DIFFERENT_KEYS);
+	   			}
+
+	   		} else {
+	   			return erreur(ERR_EXPIRED_DATE);
+	   		}
+
+	   }
+
+	}
+
 
 	//==== Fonction qui permet de générer le mail de validation de compte
 	function generate_verif_mail(){
+
+		//==== Génération de la clé de vérification
+		$cle = md5(microtime(TRUE)*100000);
+
+		//==== Génération de la durée de validité de la clé
+		$date = new DateTime();
+		date_add($date, date_interval_create_from_date_string('1 day + 1 hour'));
+		$date = date_format($date, 'Y-m-d H:i:s');
+
+		//==== Insertion de la clé dans la base
+		$bd = Base::get_base();
+		$bd->set_cle_validation($_SESSION['personne']['id'], $cle, $date);
+
+		//==== Génération du lien
+		$lien = "http://gie/Forum/activation.php?log=".urlencode($_SESSION['personne']['pseudo'])."&cle=".$cle;
 
 		//==== Déclaration du mail utilisateur
 		$mail = $_SESSION['personne']['mail'];

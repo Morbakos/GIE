@@ -7,7 +7,7 @@ require_once 'Fonctions/constantes.inc.php';
 
 //====	On init les variables et les sessions
 session_start();
-$bd = Base::getBase();
+$bd = Base::get_base();
 
 ?>
 

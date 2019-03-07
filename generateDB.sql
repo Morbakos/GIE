@@ -82,7 +82,7 @@ CREATE TABLE IF NOT EXISTS `forum_validation` (
   `validation_cle` varchar(64) COLLATE utf8_bin NOT NULL,
   `validation_until` date NOT NULL,
   PRIMARY KEY (`id_validation`),
-  KEY `validation_forum_validation-user` (`id_user`)
+  UNIQUE KEY `validation_forum_validation-user` (`id_user`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
