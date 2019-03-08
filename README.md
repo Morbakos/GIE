@@ -74,7 +74,7 @@ Deuxième étape: réalisation des fonctions PHP
 
    ```php
    //==== Note: les fonction sont représentées sous le format suivant: 
-   //==== <encapsulation> [static] function <nom>( [(type_paramètre)paramètre] ):[valeur_de_retour]
+   //==== <encapsulation> [static] function <nom>( [(type_paramètre)paramètre] ):valeur_de_retour
    //==== Les termes contenus dans des crochets [] sont faculatifs  
 
    public static function get_base():Base
@@ -94,7 +94,7 @@ Deuxième étape: réalisation des fonctions PHP
    ```php
 
    //==== Note: les fonction sont représentées sous le format suivant: 
-   //==== function <nom>( [(type_paramètre)paramètre] ):[valeur_de_retour]  
+   //==== function <nom>( [(type_paramètre)paramètre] ):valeur_de_retour
 
    function crypt_password((String)$pass):String
    function check_password((String)$user, (String)$pass):booléen
