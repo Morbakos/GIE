@@ -18,6 +18,3 @@ Une description claire et concise de toute autre solution ou caractéristique qu
 
 Contexte supplémentaire****
 Ajoutez ici tout autre contexte ou capture d'écran concernant la demande de fonctionnalité.
-
-
-Traduit avec www.DeepL.com/Translator
