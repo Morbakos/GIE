@@ -97,9 +97,9 @@ Deuxième étape: réalisation des fonctions PHP
    //==== function <nom>( [(type_paramètre)paramètre] ):valeur_de_retour
 
    function crypt_password((String)$pass):String
-   function check_password((String)$user, (String)$pass):booléen
+   function check_password((String)$user, (String)$pass):bool
    function erreur((Constante)$err):void
-   function check_cle_activation((int)$id, (String)$cle):booléen
+   function check_cle_activation((int)$id, (String)$cle):bool
    function generate_verif_mail():void
    ```
 
