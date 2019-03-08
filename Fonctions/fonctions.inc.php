@@ -8,16 +8,10 @@
 		return $passw;
 	}
 
-	//==== Fonction qui permet d'obtenir un mot de passe
-	function get_password($user){
-		$db = Base::getBase();
-		$data = $db->getPassword($user);
-		return $data['user_mdp'];
-	}
-
 	//==== Fonction qui permet de vérifier que le mot de passe saisi est correct
 	function check_password($user, $pass){
-		if(crypt_password($pass) === get_password($user)){
+		$bd = Base::get_base();
+		if(crypt_password($pass) === $bd->get_password($user)){
 			return true;
 		} else {
 			return false;

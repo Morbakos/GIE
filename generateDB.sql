@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS `forum_post` (
 CREATE TABLE IF NOT EXISTS `forum_topic` (
   `id_topic` int(11) NOT NULL AUTO_INCREMENT,
   `id_forum` int(11) NOT NULL,
-  `topic_titre` char(60) COLLATE utf8_bin NOT NULL,
+  `topic_titre` varchar(60) COLLATE utf8_bin NOT NULL,
   `topic_createur` int(11) NOT NULL,
   `topic_vu` mediumint(8) NOT NULL,
   `topic_time` int(11) NOT NULL,
