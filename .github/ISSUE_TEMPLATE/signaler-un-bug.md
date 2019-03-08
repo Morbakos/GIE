@@ -28,11 +28,11 @@ Le cas échéant, ajoutez des captures d'écran pour expliquer votre problème.
  - Navigateur[par ex. chrome, safari].
  - Version[p.ex. 22] Version
 
-Téléphone intelligent (veuillez compléter les informations suivantes)**:**
+**Téléphone intelligent (veuillez compléter les informations suivantes):**
  - Dispositif : [par ex. iPhone6]
  - OS : iOS8.1][par ex. iOS8.1].
  - Navigateur[par ex. navigateur de stock, safari].
  - Version[p.ex. 22] Version
 
-Contexte supplémentaire****
+**Contexte supplémentaire**
 Ajoutez ici tout autre contexte sur le problème.
