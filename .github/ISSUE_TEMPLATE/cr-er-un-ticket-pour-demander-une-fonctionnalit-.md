@@ -1,5 +1,5 @@
 ---
-name: Créer un ticket pour demander une fonctionnalité
+name: Demander une fonctionnalité
 about: Suggérer une idée pour ce projet
 title: ''
 labels: enhancement
@@ -13,7 +13,7 @@ Une description claire et concise du problème. Ex. Je suis toujours frustré qu
 **Décrivez la solution que vous aimeriez**
 Une description claire et concise de ce que vous voulez qu'il se passe.
 
-**Décrivez les alternatives que vous avez envisagées.
+**Décrivez les alternatives que vous avez envisagées.**
 Une description claire et concise de toute autre solution ou caractéristique que vous avez envisagée.
 
 Contexte supplémentaire****
