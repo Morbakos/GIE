@@ -1,0 +1,43 @@
+:root {
+  --fond: #303033;
+  --main-color: #590000;
+  --link: #3498db;
+  --blanc: #ecf0f1;
+  --font: 'Helvetica';
+}
+
+html, body {
+  height: 100%;
+  background-image: url("img/fond.jpg");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: table;
+  font-weight: 100;
+  font-size: 20px;
+  font-family: var(--font);
+  color: var(--blanc);
+}
+
+.container {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.content {
+  text-align: center;
+  display: inline-block;
+}
+
+.title {
+  font-size: 110px;
+}
+
+img {
+  width: 15%;
+  height: 15%;
+}
