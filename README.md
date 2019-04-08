@@ -48,14 +48,14 @@ Première étape: création base de données
   forum_post       |id_topic                    |int(11)           |
   forum_post       |post_id_forum               |int(11)           |
    | | |
-  forum_user       |id_user                     |int(11)           | 
-  forum_user       |user_pseudo                 |varchar(30)       |
-  forum_user       |user_mdp                    |varchar(64)       |
-  forum_user       |user_email                  |varchar(250)      |
-  forum_user       |user_avatar                 |varchar(100)      |
-  forum_user       |user_valide                 |tinyint(1)        |
-  forum_user       |user_rang                   |tinyint(4)        |
-  forum_user       |user_post                   |int(11)           |
+  user       |id_user                     |int(11)           | 
+  user       |user_pseudo                 |varchar(30)       |
+  user       |user_mdp                    |varchar(64)       |
+  user       |user_email                  |varchar(250)      |
+  user       |user_avatar                 |varchar(100)      |
+  user       |user_valide                 |tinyint(1)        |
+  user       |user_rang                   |tinyint(4)        |
+  user       |user_post                   |int(11)           |
    | | |
   forum_validation |id_validation               |int(11)           | 
   forum_validation |id_user                     |int(11)           |
