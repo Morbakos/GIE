@@ -51,11 +51,13 @@ Première étape: création base de données
   user       |id_user                     |int(11)           | 
   user       |user_pseudo                 |varchar(30)       |
   user       |user_mdp                    |varchar(64)       |
-  user       |user_email                  |varchar(250)      |
+  user       |email                       |varchar(250)      |
   user       |user_avatar                 |varchar(100)      |
   user       |user_valide                 |tinyint(1)        |
   user       |user_rang                   |tinyint(4)        |
   user       |user_post                   |int(11)           |
+  user       |created_at                  |timestamps        |
+  user       |updated_at                  |timestamps        |
    | | |
   forum_validation |id_validation               |int(11)           | 
   forum_validation |id_user                     |int(11)           |
