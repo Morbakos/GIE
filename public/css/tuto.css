@@ -1,0 +1,61 @@
+:root {
+  --fond: #303033;
+  --main-color: #590000;
+  --link: #3498db;
+  --blanc: #ecf0f1;
+  --font: 'Helvetica';
+}
+
+html, body {
+  height: 100%;
+  background-image: url("img/fond.jpg");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: table;
+  font-weight: 100;
+  font-size: 20px;
+  font-family: var(--font);
+  color: var(--blanc);
+}
+
+.container {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.content {
+  text-align: center;
+  display: inline-block;
+}
+
+.title {
+  font-size: 110px;
+}
+
+img {
+  width: 15%;
+  height: 15%;
+}
+
+code {
+  background-color: #808080;
+  border-radius: 3px;
+  font-family: courier, monospace;
+  padding: 0 3px;
+  text-align: left;
+  display: inline-block;  
+}
+
+pre.data {
+  padding: 10px;
+  background-color: #808080;
+  margin: 10px;
+  height: 400px;
+  width: 1200px;
+  overflow: scroll;
+}
