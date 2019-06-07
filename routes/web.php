@@ -21,4 +21,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('missions', 'MissionController');
+Route::resource('missions', 'MissionController', ['except' => 'show', 'edit', 'update', 'destroy' ]);
