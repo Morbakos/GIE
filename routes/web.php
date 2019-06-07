@@ -20,3 +20,5 @@ Route::get('home', 'MyController@HomePage');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('missions', 'MissionController');
