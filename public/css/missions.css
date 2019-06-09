@@ -1,0 +1,21 @@
+@import url("home.css");
+
+.title {
+  font-size: 70px;
+}
+
+.container table {
+  display: inline-block;
+  margin: auto;
+  background: rgba(62, 62, 62, 0.7);
+}
+
+.container th {
+  font-family: var(--bis-font);
+  font-weight: inherit;
+  padding: 2px 6px 2px 6px;
+}
+
+@media screen and (min-width: 480px) {
+
+}

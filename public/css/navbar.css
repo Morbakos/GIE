@@ -1,0 +1,46 @@
+@import url("home.css");
+
+:root {
+  --nav-fond: rgba(62, 62, 62, 0.5);
+}
+
+.navbar {
+  background-color: var(--nav-fond);
+  display: block;
+  position: fixed;
+  text-transform: capitalize;
+  width : 380px;
+  height : 70px;
+  margin: 10px;
+}
+
+.nav-items a {
+  color: var(--blanc);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-items a:hover {
+  color: var(--link-color);
+}
+
+.nav-items a#en-cours {
+  color: var(--link-color);
+  font-size: 25px;
+}
+
+.nav-items li {
+  list-style-type: none;
+  display: inline;
+  padding : 0 0.5em;
+  color: inherit;
+  font-size: 20px;
+}
+
+li.nav-left {
+  float : left;
+}
+
+li.nav-right {
+  float : right;
+}

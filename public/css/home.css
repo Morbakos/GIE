@@ -1,9 +1,14 @@
 :root {
   --fond: #303033;
   --main-color: #590000;
-  --link: #3498db;
+  --font-size: 20px;
+  --link-color: rgb(183, 28, 28);
+  --link-color-hover: #6c5ce7;
+  --link-decoration: none;
+  --link-decoration-hover: underline;
   --blanc: #ecf0f1;
-  --font: 'Helvetica';
+  --common-font: 'Roboto', sans-serif;
+  --bis-font: purista-web, sans-serif;
 }
 
 html, body {
@@ -17,8 +22,8 @@ body {
   width: 100%;
   display: table;
   font-weight: 100;
-  font-size: 20px;
-  font-family: var(--font);
+  font-size: var(--font-size);
+  font-family: var(--common-font);
   color: var(--blanc);
 }
 
@@ -34,7 +39,19 @@ body {
 }
 
 .title {
-  font-size: 110px;
+  font-size: 90px;
+  font-style: normal;
+}
+
+.link {
+  color: var(--link-color);
+  text-decoration: var(--link-decoration);
+}
+
+.link:hover {
+  color: var(--link-color-hover);
+  text-decoration: var(--link-decoration-hover);
+  font-size: var(--font-size);
 }
 
 img {

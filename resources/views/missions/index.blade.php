@@ -1,13 +1,16 @@
+<?php $nav_here = 'nav-3'; ?>
 <html>
-   
+
    <head>
-      <title>Affichage des missions GIE</title>
-  <link rel="stylesheet" href="css/home.css">
+  <title>Affichage des missions GIE</title>
+  <link rel="stylesheet" href="css/missions.css">
+  <link rel="stylesheet" href="https://use.typekit.net/lsr4ukz.css">
   <link rel="icon" type="image/png" href="css/img/logo.png" />
+  <link rel="stylesheet" href="/css/navbar.css">
    </head>
-   
+
    <body>
-   
+   <?php include(app_path().'/includes/navbar.php');?>
    <div class='container'>
    <div class='title'>Nos missions </div><br/>
       <table border = 1 class='center' style="text-align:center">
@@ -46,8 +49,8 @@
       </table>
       <br/><br/><br/><br/>
       @if (Auth::check())
-      {!! Form::open(['route' => 'missions.store', 'class' => 'form-horizontal panel']) !!}  
-      {!! Form::token(); !!}  
+      {!! Form::open(['route' => 'missions.store', 'class' => 'form-horizontal panel']) !!}
+      {!! Form::token(); !!}
                     <div class="form-group {!! $errors->has('nom_mission') ? 'has-error' : '' !!}">
                     <fieldset style="display:inline-block;">
                         <legend>Ajouter une mission :</legend>
