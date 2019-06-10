@@ -1,11 +1,7 @@
 @import url("home.css");
 
-:root {
-  --nav-fond: rgba(62, 62, 62, 0.5);
-}
-
 .navbar {
-  background-color: var(--nav-fond);
+  background: var(--window-fond);
   display: block;
   position: fixed;
   text-transform: capitalize;

@@ -1,5 +1,9 @@
 @import url("home.css");
 
+.content {
+  text-align: left;
+}
+
 .content a {
   color: var(--link-color);
   text-decoration: var(--link-decoration);
@@ -7,6 +11,28 @@
 
 .content a:hover {
   color: var(--link-color-hover);
-    text-decoration: var(--link-decoration-hover);
-    font-size: 25px;
+  text-decoration: var(--link-decoration-hover);
+  font-size: 25px;
+}
+
+summary {
+  color: var(--link-color);
+}
+
+summary:hover {
+  color: var(--link-color-hover);
+  cursor: pointer;
+}
+
+.tuto li {
+  list-style: none;
+}
+
+pre code {
+  display: block;
+  background: rgba(0, 0, 0, 0.4);
+  position: relative;
+  white-space: pre-line;
+  word-wrap: break-word;
+  padding: 20px;
 }

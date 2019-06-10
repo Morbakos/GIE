@@ -1,19 +1,25 @@
 @import url("home.css");
 
 .title {
-  font-size: 70px;
+  font-size: 60px;
 }
 
 .container table {
   display: inline-block;
   margin: auto;
-  background: rgba(62, 62, 62, 0.7);
+  background: var(--window-fond);
+  border-color: #485460;
 }
 
 .container th {
   font-family: var(--bis-font);
   font-weight: inherit;
-  padding: 2px 6px 2px 6px;
+  padding: 10px;
+}
+
+.form-group fieldset {
+  background: var(--window-fond);
+  border-color: black;
 }
 
 @media screen and (min-width: 480px) {

@@ -44,7 +44,6 @@
             <td>{{ $mission->nombre_jouer_mission }}</td>
             <td>{{ $mission->type_mission }} </td>
          </tr>
-
          @endforeach
       </table>
       <br/><br/><br/><br/>

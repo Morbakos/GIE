@@ -2,6 +2,7 @@
   --fond: #303033;
   --main-color: #590000;
   --font-size: 20px;
+  --window-fond: rgba(0, 0, 0, 0.4);
   --link-color: rgb(183, 28, 28);
   --link-color-hover: #6c5ce7;
   --link-decoration: none;
@@ -14,6 +15,7 @@
 html, body {
   height: 100%;
   background-image: url("img/fond.jpg");
+  background-attachment: fixed;
 }
 
 body {
