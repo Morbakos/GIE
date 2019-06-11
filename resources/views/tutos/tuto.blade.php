@@ -11,9 +11,7 @@
   <?php include(app_path().'/includes/navbar.php');?>
   <div class='container'>
     <div class='content'>
-      Choisissez le tuto:
-      <br><span>{!! link_to_route('tuto.show', 'Intégrer la traduction française du manuel de déminage ', [1], []) !!}</span>
-      <br><span>{!! link_to_route('tuto.show', 'Intégrer le script HALO', [2], []) !!}</span>
+      {!! $tuto->contenu !!}
     </div>
   </div>
 </body>
