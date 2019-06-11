@@ -14,6 +14,7 @@ class Mission extends Model
     	'nom_mission',
 		'auteur_mission',
 		'map_mission',
+		'composante_mission',
 		'nombre_slots_mission',
 		'correction_mission',
 		'zeus_mission',

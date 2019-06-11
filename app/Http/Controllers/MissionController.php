@@ -36,6 +36,8 @@ class MissionController extends Controller
 
     public function store(MissionCreateRequest $request)
     {
+        $this->setComposantes($request);
+
         $mission = $this->missionRepository->store($request->all());
 
         return redirect('missions')->withOk("L'utilisateur " . $mission->nom_mission . " a été créé.");
@@ -67,6 +69,16 @@ class MissionController extends Controller
         $this->missionRepository->destroy($id);
 
         return back();
+    }
+
+    private function setComposantes($request)
+    {
+        // Sélectionner les composantes dans les inputs
+        $myCheckboxes = $request->input('composante_mission');
+          
+        // Conversion en chaîne de caractère
+        $composantes = implode(",", $myCheckboxes); 
+        $request->merge(['composante_mission' => $composantes]);
     }
 
 }

@@ -18,6 +18,7 @@ class CreateMissionsTable extends Migration
             $table->string('nom_mission');
             $table->string('auteur_mission');
             $table->string('map_mission');
+            $table->string('composante_mission');
             $table->integer('nombre_slots_mission');
             $table->string('correction_mission')->nullable()->default('Aucune');
             $table->string('zeus_mission')->nullable()->default('Non');
