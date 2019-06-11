@@ -16,35 +16,35 @@
       <table border = 1 class='center' style="text-align:center">
          <tr>
             <th>Nom de la mission</th>
+            <th>Statut de la mission</th>
             <th>Auteur de la mission</th>
             <th>Map</th>
             <th>Composantes</th>
             <th>Nombre de slot</th>
-            <th>Correction</th>
-            <th>Zeus</th>
             <th>Briefing</th>
             <th>Hostiles</th>
-            <th>Durée estimée</th>
-            <th>Statut de la mission</th>
+            <th>Durée estimée</th>            
             <th>Nombre de fois jouée</th>
             <th>Type de la mission</th>
+            <th>Correction</th>
+            <th>Zeus</th>
          </tr>
          @foreach ($missions as $mission)
          <tr>
             <input type="hidden" value='{{ $mission->id_mission }}'>
             <td>{{ $mission->nom_mission }}</td>
+            <td>{{ $mission->statut_mission }}</td>
             <td>{{ $mission->auteur_mission }}</td>
             <td>{{ $mission->map_mission }}</td>
             <td>{{ $mission->composante_mission }}</td>
             <td>{{ $mission->nombre_slots_mission }}</td>
-            <td>{{ $mission->correction_mission }}</td>
-            <td>{{ $mission->zeus_mission }}</td>
             <td width="20%">{{ $mission->briefing_mission }}</td>
             <td>{{ $mission->hostile_mission }}</td>
             <td>{{ $mission->duree_estimee_mission }}</td>
-            <td>{{ $mission->statut_mission }}</td>
             <td>{{ $mission->nombre_jouer_mission }}</td>
             <td>{{ $mission->type_mission }} </td>
+            <td>{{ $mission->correction_mission }}</td>
+            <td>{{ $mission->zeus_mission }}</td>
          </tr>
          @endforeach
       </table>
@@ -52,6 +52,7 @@
       @if (Auth::check())
       {!! Form::open(['route' => 'missions.store', 'class' => 'form-horizontal panel']) !!}
       {!! Form::token(); !!}
+      <div class="form-group {!! $errors->has('nom_mission') ? 'has-error' : '' !!}">
         <fieldset style="display:inline-block;">
           <legend>Ajouter une mission :</legend>
 
