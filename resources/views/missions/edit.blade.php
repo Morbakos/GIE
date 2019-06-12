@@ -10,7 +10,7 @@
     
    <div class='container'>
    <div class='content'><a href="../../missions">Retour en arrière</a></div><br/>
-   {!! Form::model($mission, [route('missions.update', $mission->id_missions), 'method' => 'PUT', 'class' => 'form-horizontal panel']) !!}
+   {!! Form::model($mission, [route('missions.update', $mission->id_mission), 'method' => 'PUT', 'class' => 'form-horizontal panel']) !!}
    {!! Form::token(); !!} 
                     <div class="form-group {!! $errors->has('nom_mission') ? 'has-error' : '' !!}">
                     <fieldset style="display:inline-block;">

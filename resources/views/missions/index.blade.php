@@ -15,17 +15,16 @@
    <div class='title'>Nos missions </div><br/>
       <table border = 1 class='center' style="text-align:center">
          <tr>
-            <th>Nom de la mission</th>
-            <th>Statut de la mission</th>
-            <th>Auteur de la mission</th>
+            <th>Mission</th>
+            <th>Statut</th>
+            <th>Auteur</th>
             <th>Map</th>
             <th>Composantes</th>
-            <th>Nombre de slot</th>
+            <th>Slot</th>
             <th>Briefing</th>
             <th>Hostiles</th>
-            <th>Durée estimée</th>            
-            <th>Nombre de fois jouée</th>
-            <th>Type de la mission</th>
+            <th>Durée</th>            
+            <th>Type</th>
             <th>Correction</th>
             <th>Zeus</th>
          </tr>
@@ -38,10 +37,9 @@
             <td>{{ $mission->map_mission }}</td>
             <td>{{ $mission->composante_mission }}</td>
             <td>{{ $mission->nombre_slots_mission }}</td>
-            <td width="20%">{{ $mission->briefing_mission }}</td>
+            <td width="80%">{!! $mission->briefing_mission !!}</td>
             <td>{{ $mission->hostile_mission }}</td>
             <td>{{ $mission->duree_estimee_mission }}</td>
-            <td>{{ $mission->nombre_jouer_mission }}</td>
             <td>{{ $mission->type_mission }} </td>
             <td>{{ $mission->correction_mission }}</td>
             <td>{{ $mission->zeus_mission }}</td>
