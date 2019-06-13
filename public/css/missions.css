@@ -36,7 +36,7 @@
 .tableau {
   border-color: white;
   display: block;
-  margin: 0px 250px;
+  margin: 0px 200px;
   padding: 50px 0px;
   background: var(--window-fond);
 }
