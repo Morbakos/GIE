@@ -5,7 +5,7 @@
   display: block;
   position: fixed;
   text-transform: capitalize;
-  width : 380px;
+  width : 100%;
   height : 70px;
   margin: 10px;
 }
@@ -27,16 +27,13 @@
 
 .nav-items li {
   list-style-type: none;
-  display: inline;
-  padding : 0 0.5em;
   color: inherit;
+  display: inline;
   font-size: 20px;
+  padding: 0 0.5em;
 }
 
-li.nav-left {
-  float : left;
-}
-
-li.nav-right {
-  float : right;
+li a.nav-right {
+  float: right;
+  margin-right: 50px;
 }

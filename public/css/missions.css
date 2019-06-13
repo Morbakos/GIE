@@ -1,25 +1,54 @@
 @import url("home.css");
 
 .title {
-  font-size: 60px;
+  font-size: 30px;
+}
+
+.container {
+  padding-top: 100px;
 }
 
 .container table {
   display: inline-block;
   margin: auto;
-  background: var(--window-fond);
   border-color: #485460;
 }
 
 .container th {
-  font-family: var(--bis-font);
+  font-family: var(--common-font);
   font-weight: inherit;
-  padding: 10px;
+  padding: 10px 15px;
+  font-size: 18px;
+}
+
+.container td {
+  padding: 5px 10px;
+  font-family: var(--bis-font);
 }
 
 .form-group fieldset {
+  display: inline-block;
   background: var(--window-fond);
   border-color: black;
+  text-align: left;
+}
+
+.tableau {
+  border-color: white;
+  display: block;
+  margin: 0px 250px;
+  padding: 50px 0px;
+  background: var(--window-fond);
+}
+
+.composante-mission {
+  margin: 10px;
+  display: inline-block;
+  text-align: left;
+}
+
+#tableau {
+  font-size: 15px;
 }
 
 @media screen and (min-width: 480px) {
