@@ -1,5 +1,9 @@
 @import url("home.css");
 
+.container {
+  padding-top: 100px;
+}
+
 .content {
   text-align: left;
   display: inline-block;
@@ -30,10 +34,6 @@
 
 .content .user a:hover {
   font-size: inherit;
-}
-
-.tuto-menu {
-  text-transform: capitalize;
 }
 
 summary {
@@ -81,4 +81,5 @@ pre code {
 
 .retour {
   display: table-cell;
+  padding-bottom: 80px;
 }

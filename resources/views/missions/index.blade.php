@@ -28,6 +28,9 @@
             <th>Type</th>
             <th>Correction</th>
             <th>Zeus</th>
+            @if (Auth::check())
+              <th>Edition</th>
+            @endif
          </tr>
          @foreach ($missions as $mission)
          <tr>
@@ -44,6 +47,9 @@
             <td>{{ $mission->type_mission }} </td>
             <td>{{ $mission->correction_mission }}</td>
             <td>{{ $mission->zeus_mission }}</td>
+            @if (Auth::check())
+              <td>{{ link_to_route('missions.edit', 'Editer', [$mission->id_mission], []) }}</td>
+            @endif
          </tr>
          @endforeach
       </table>

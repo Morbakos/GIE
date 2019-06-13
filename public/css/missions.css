@@ -26,6 +26,16 @@
   font-family: var(--bis-font);
 }
 
+.container td a {
+  color: var(--link-color);
+  text-decoration: var(--link-decoration);
+}
+
+.container td a:hover {
+  color: var(--link-color-hover);
+  text-decoration: var(--link-decoration-hover);
+}
+
 .form-group fieldset {
   display: inline-block;
   background: var(--window-fond);
@@ -36,7 +46,7 @@
 .tableau {
   border-color: white;
   display: block;
-  margin: 0px 200px;
+  margin: 0px 150px;
   padding: 50px 0px;
   background: var(--window-fond);
 }

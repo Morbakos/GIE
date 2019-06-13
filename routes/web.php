@@ -15,10 +15,6 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('nav', function () {
-    return view('navbar');
-});
-
 Route::get('home', 'MyController@HomePage');
 
 Auth::routes();
