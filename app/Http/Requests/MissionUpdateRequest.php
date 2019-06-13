@@ -24,15 +24,19 @@ class MissionUpdateRequest extends FormRequest
     public function rules()
     {
 
-        $nom = $this->nom_mission
-
         return [
-            'nom_mission' => 'required|unique:mission,nom_mission,' $nom, 
-            'auteur_mission' => 'required', 
-            'map_mission' => 'required', 
+            'nom_mission' => 'required',
+            'auteur_mission' => 'required',
+            'map_mission' => 'required',
+            'composante_mission' => 'required',
             'nombre_slots_mission' => 'required|numeric',
-            'duree_estimee_mission' => 'nullable|numeric',
-            'type_mission' => 'required|string'
+            'zeus_mission' => 'required',
+            'briefing_mission' => 'required',
+            'hostile_mission' => 'required',
+            'duree_estimee_mission' => 'required|numeric',
+            'statut_mission' => 'required',
+            'nombre_jouer_mission' => 'required|numeric',
+            'type_mission' => 'required'
         ];
     }
 }

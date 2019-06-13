@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\MissionCreateRequest;
-use App\Htpp\Requests\MissionUpdateRequest;
+use App\Http\Requests\MissionUpdateRequest;
 
 use App\Repositories\MissionRepository;
 
@@ -59,9 +59,10 @@ class MissionController extends Controller
 
     public function update(MissionUpdateRequest $request, $id)
     {
+        $this->setComposantes($request);
         $this->missionRepository->update($id, $request->all());
         
-        return redirect('missions.index')->withOk("L'utilisateur " . $request->input('name') . " a été modifié.");
+        return redirect('missions')->withOk("L'utilisateur " . $request->input('name') . " a été modifié.");
     }
 
     public function destroy($id)
@@ -75,7 +76,7 @@ class MissionController extends Controller
     {
         // Sélectionner les composantes dans les inputs
         $myCheckboxes = $request->input('composante_mission');
-          
+
         // Conversion en chaîne de caractère
         $composantes = implode(",", $myCheckboxes); 
         $request->merge(['composante_mission' => $composantes]);
