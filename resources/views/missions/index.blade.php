@@ -145,5 +145,6 @@
         {!! Form::close() !!}
         @endif
         </div>
+      {!! $links !!}
 </body>
 </html>

@@ -14,7 +14,7 @@ class MissionController extends Controller
 
     protected $missionRepository;
 
-    protected $nbrPerPage = 15;
+    protected $nbrPerPage = 10;
 
     public function __construct(MissionRepository $missionRepository)
     {
