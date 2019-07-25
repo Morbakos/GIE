@@ -57,6 +57,15 @@
   text-align: left;
 }
 
+.container li {
+	display: inline-block;
+}
+
+.container li a {
+  color: var(--link-color);
+  text-decoration: var(--link-decoration);
+}
+
 #tableau {
   font-size: 15px;
 }
